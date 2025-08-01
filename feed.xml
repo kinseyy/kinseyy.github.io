@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>北沐城歌</title>
+        <link>https://kinseyy.github.io/</link>
+        <description>山行野宿，孤身万里</description>
+        <lastBuildDate>Fri, 01 Aug 2025 05:00:38 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>北沐城歌</title>
+            <url>https://insey.oss-cn-shenzhen.aliyuncs.com/kin/202410261321057.png</url>
+            <link>https://kinseyy.github.io/</link>
+        </image>
+        <copyright>CC BY-NC-SA 4.0 2025 © 北歌</copyright>
+        <atom:link href="https://kinseyy.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Valaxy 主题 Hairy]]></title>
+            <link>https://kinseyy.github.io/posts/theme/index</link>
+            <guid>https://kinseyy.github.io/posts/theme/index</guid>
+            <pubDate>Fri, 01 Aug 2025 04:59:33 GMT</pubDate>
+            <content:encoded><![CDATA[<HairyImage class="rounded w-full h-150" fit="contain" src="https://kinseyy.github.io/preview.png" />
+<p>最初使用 <a href="https://www.vuepress.cn/">Vuepress</a> 搭建了一个博客，主要用于记录学习笔记，为了方便直接采用了 gitee pages 进行部署。后面想要一个更加个性化的博客。尽管 <a href="https://www.vuepress.cn/">Vuepress</a> 在文档功能上表现出色，但其定制复杂且功能集成度有限，许多功能需要自己动手实现。</p>
+<p>之后我发现了 <a href="https://valaxy.site/">Valaxy</a> 它的设计理念与我的需求十分相似符合，加上近期 gitee pages 频繁告警文章敏感内容，难以排查（主要原因? ）博客几乎处于瘫痪状态，因此我决定转向 Valaxy 定制博客。</p>
+<p>Valaxy 在官网中所描述，Valaxy = V + Galaxy 旨在成为下一代静态博客框架，提供更好的热更新与用户加载体验，它不像传统的文档系统，内置了更多博客相关的 API，为博客开发提供了更强大更便捷的自定义开发可能性。</p>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (北歌)</author>
+        </item>
+        <item>
+            <title><![CDATA[主题配置]]></title>
+            <link>https://kinseyy.github.io/posts/theme/step-1</link>
+            <guid>https://kinseyy.github.io/posts/theme/step-1</guid>
+            <pubDate>Fri, 01 Aug 2025 04:59:33 GMT</pubDate>
+            <content:encoded><![CDATA[<p>通过修改 valaxy.config 的 themeConfig 字段，可以修改部分主题部分。</p>
+<pre><code class="language-ts">import { defineConfig } from 'valaxy'
+import type { ThemeConfig } from 'valaxy-theme-hairy'
+export default defineConfig&lt;ThemeConfig&gt;({
+  theme: 'hairy',
+
+  themeConfig: {
+    // ...
+  },
+})
+</code></pre>
+<h2>主页配置</h2>
+<pre><code class="language-json">{
+  // 修改此列表更改主页轮播图使用的图片列表
+  // 默认使用 hairy 内置的图片列表
+  &quot;images&quot;: [/* your image urls */]
+}
+</code></pre>
+<h2>文章配置</h2>
+<pre><code class="language-json">{
+  &quot;layout&quot;: {
+    &quot;post&quot;: &quot;image:slice:reverse&quot;
+  },
+  // posts image 数量需要达到 6 个以上才会生效
+  &quot;images&quot;: [/* your image urls */]
+}
+</code></pre>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (北歌)</author>
+        </item>
+        <item>
+            <title><![CDATA[界面配置]]></title>
+            <link>https://kinseyy.github.io/posts/theme/step-2</link>
+            <guid>https://kinseyy.github.io/posts/theme/step-2</guid>
+            <pubDate>Fri, 01 Aug 2025 04:59:33 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>文章分类</h2>
+<p>分类用于归类系列文章。</p>
+<ul>
+<li>一级分类</li>
+</ul>
+<pre><code class="language-md">---
+title: 标题
+categories: Valaxy Theme Hairy
+---
+</code></pre>
+<ul>
+<li>多级分类</li>
+</ul>
+<pre><code class="language-md">---
+title: 标题
+categories:
+  - aaa
+  - bbb
+  - ccc
+---
+</code></pre>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (北歌)</author>
+        </item>
+        <item>
+            <title><![CDATA[特殊功能]]></title>
+            <link>https://kinseyy.github.io/posts/theme/step-3</link>
+            <guid>https://kinseyy.github.io/posts/theme/step-3</guid>
+            <pubDate>Fri, 01 Aug 2025 04:59:33 GMT</pubDate>
+            <content:encoded><![CDATA[<p>:::info<br>
+以下介绍可以使用的 markdown 或者 html 标签。</p>
+<p>功能大部分基于 <code>markdown-it</code> 插件与 <code>theme/components</code> 中的组件。<br>
+:::</p>
+<h2>links 链接</h2>
+<p>基于 theme components，用来建立友链或其他网址链接功能。</p>
+<p>使用 <code>HairyLinks</code> 标签、字段包含</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>名称</th>
+<th>必填</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>名称</td>
+<td>是</td>
+</tr>
+<tr>
+<td>url</td>
+<td>地址</td>
+<td>是</td>
+</tr>
+<tr>
+<td>image</td>
+<td>图片</td>
+<td>是</td>
+</tr>
+<tr>
+<td>color</td>
+<td>颜色</td>
+<td>是</td>
+</tr>
+<tr>
+<td>desc</td>
+<td>描述</td>
+<td>否</td>
+</tr>
+</tbody>
+</table>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (北歌)</author>
+        </item>
+        <item>
+            <title><![CDATA[Hello, Valaxy!]]></title>
+            <link>https://kinseyy.github.io/posts/hello-valaxy</link>
+            <guid>https://kinseyy.github.io/posts/hello-valaxy</guid>
+            <pubDate>Wed, 23 Mar 2022 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Hello, Valaxy!</h2>
+<pre><code class="language-ts">import type { ThemeConfig } from 'valaxy-theme-hairy'
+import { defineConfi</code></pre>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (北歌)</author>
+        </item>
+    </channel>
+</rss>
