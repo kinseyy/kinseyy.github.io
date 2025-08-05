@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://kinseyy.github.io/</id>
+    <title>北沐城歌</title>
+    <updated>2025-08-05T02:04:51.883Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>北歌</name>
+        <email>i@valaxy.site</email>
+        <uri>https://valaxy.site</uri>
+    </author>
+    <link rel="alternate" href="https://kinseyy.github.io/"/>
+    <link rel="self" href="https://kinseyy.github.io/atom.xml"/>
+    <subtitle>山行野宿，孤身万里</subtitle>
+    <logo>https://insey.oss-cn-shenzhen.aliyuncs.com/kin/202410261321057.png</logo>
+    <icon>https://kinseyy.github.io/favicon.svg</icon>
+    <rights>CC BY-NC-SA 4.0 2025 © 北歌</rights>
+    <entry>
+        <title type="html"><![CDATA[NodeJS 加密系统（crypto）]]></title>
+        <id>https://kinseyy.github.io/posts/crypto</id>
+        <link href="https://kinseyy.github.io/posts/crypto"/>
+        <updated>2020-05-04T14:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p><code>crypto</code> 模块提供了加密功能，实现了包括对 OpenSSL 的哈希、HMAC、加密、解密、签名、以及验证功能的一整套封装。<code>Hash</code> 类是用于创建数据加密哈希值的工具类。</p>
+<p>查看 crypto 模块支持的 hash 函数：<code>crypto.getHashes()</code></p>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content>
+        <author>
+            <name>北歌</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2025-08-05T02:03:49.329Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[i18n]]></title>
+        <id>https://kinseyy.github.io/posts/i18n</id>
+        <link href="https://kinseyy.github.io/posts/i18n"/>
+        <updated>2022-04-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[关于 I18N 的使用]]></summary>
+        <content type="html"><![CDATA[<p>::: tip</p>
+<p>You can click this button to toggle locales.</p>
+<p>:::</p>
+<div class="text-center">
+  <!-- <YunToggleLocale class="shadow" /> -->
+</div>
+<p>::: zh-CN</p>
+<blockquote>
+<p>在一个页面中实现 i18n</p>
+</blockquote>
+<p>为了使 <a href="https://github.com/YunYouJun/valaxy">Valaxy</a> 成为一个国际化的项目，i18n 是必不可少的。</p>
+<p>常见的 i18n 方案为采用不同的路径（如 <code>/zh-CN/</code>）或解析不同的域名（<code>cn.xxx.xxx</code>）来分别维护。</p>
+<blockquote>
+<p>此外还可使用 <a href="https://crowdin.com/">crowdin</a> 平台辅助用户进行多语言翻译。</p>
+</blockquote>
+<p>但对于博客来说，这显然都很麻烦。<br>
+当你需要 i18n 时，你不得不同时维护多个目录下的文章。<br>
+当文章间存在相同的示例时，你还需要维护相同的内容。非常不优雅。</p>
+<p>Valaxy 中，<br>
+站点的独立字段部分（如文章目录：Table of Contents）基于 <a href="https://vue-i18n.intlify.dev/">vue-i18n</a> 实现，<br>
+而文章内容部分的大段文本则采用另一种 CSS i18n 的方案。</p>
+<p><a href="#result">我想先看看效果</a></p>
+<p>:::</p>
+<p>::: en</p>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content>
+        <author>
+            <name>北歌</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2025-08-05T02:03:49.329Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Valaxy Test 文章内容测试]]></title>
+        <id>https://kinseyy.github.io/posts/test</id>
+        <link href="https://kinseyy.github.io/posts/test"/>
+        <updated>2022-03-23T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>::: zh-CN<br>
+[[toc]]</p>
+<p>标题是一级标题</p>
+<h2>二级标题 {lang=&quot;zh-CN&quot;}</h2>
+<h3>三级标题 {lang=&quot;zh-CN&quot;}</h3>
+<h4>四级标题 {lang=&quot;zh-CN</h4>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content>
+        <author>
+            <name>北歌</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2025-08-05T02:03:49.329Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Valaxy 主题 Hairy]]></title>
+        <id>https://kinseyy.github.io/posts/theme/index</id>
+        <link href="https://kinseyy.github.io/posts/theme/index"/>
+        <updated>2022-08-03T15:00:00.000Z</updated>
+        <content type="html"><![CDATA[<HairyImage class="rounded w-full h-150" fit="contain" src="https://kinseyy.github.io/preview.png" />
+<p>最初使用 <a href="https://www.vuepress.cn/">Vuepress</a> 搭建了一个博客，主要用于记录学习笔记，为了方便直接采用了 gitee pages 进行部署。后面想要一个更加个性化的博客。尽管 <a href="https://www.vuepress.cn/">Vuepress</a> 在文档功能上表现出色，但其定制复杂且功能集成度有限，许多功能需要自己动手实现。</p>
+<p>之后我发现了 <a href="https://valaxy.site/">Valaxy</a> 它的设计理念与我的需求十分相似符合，加上近期 gitee pages 频繁告警文章敏感内容，难以排查（主要原因? ）博客几乎处于瘫痪状态，因此我决定转向 Valaxy 定制博客。</p>
+<p>Valaxy 在官网中所描述，Valaxy = V + Galaxy 旨在成为下一代静态博客框架，提供更好的热更新与用户加载体验，它不像传统的文档系统，内置了更多博客相关的 API，为博客开发提供了更强大更便捷的自定义开发可能性。</p>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content>
+        <author>
+            <name>北歌</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2025-08-05T02:03:49.329Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[主题配置]]></title>
+        <id>https://kinseyy.github.io/posts/theme/step-1</id>
+        <link href="https://kinseyy.github.io/posts/theme/step-1"/>
+        <updated>2022-08-03T16:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>通过修改 valaxy.config 的 themeConfig 字段，可以修改部分主题部分。</p>
+<pre><code class="language-ts">import { defineConfig } from 'valaxy'
+import type { ThemeConfig } from 'valaxy-theme-hairy'
+export default defineConfig&lt;ThemeConfig&gt;({
+  theme: 'hairy',
+
+  themeConfig: {
+    // ...
+  },
+})
+</code></pre>
+<h2>主页配置</h2>
+<pre><code class="language-json">{
+  // 修改此列表更改主页轮播图使用的图片列表
+  // 默认使用 hairy 内置的图片列表
+  &quot;images&quot;: [/* your image urls */]
+}
+</code></pre>
+<h2>文章配置</h2>
+<pre><code class="language-json">{
+  &quot;layout&quot;: {
+    &quot;post&quot;: &quot;image:slice:reverse&quot;
+  },
+  // posts image 数量需要达到 6 个以上才会生效
+  &quot;images&quot;: [/* your image urls */]
+}
+</code></pre>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content>
+        <author>
+            <name>北歌</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2025-08-05T02:03:49.329Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[界面配置]]></title>
+        <id>https://kinseyy.github.io/posts/theme/step-2</id>
+        <link href="https://kinseyy.github.io/posts/theme/step-2"/>
+        <updated>2022-08-03T16:30:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>文章分类</h2>
+<p>分类用于归类系列文章。</p>
+<ul>
+<li>一级分类</li>
+</ul>
+<pre><code class="language-md">---
+title: 标题
+categories: Valaxy Theme Hairy
+---
+</code></pre>
+<ul>
+<li>多级分类</li>
+</ul>
+<pre><code class="language-md">---
+title: 标题
+categories:
+  - aaa
+  - bbb
+  - ccc
+---
+</code></pre>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content>
+        <author>
+            <name>北歌</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2025-08-05T02:03:49.329Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[特殊功能]]></title>
+        <id>https://kinseyy.github.io/posts/theme/step-3</id>
+        <link href="https://kinseyy.github.io/posts/theme/step-3"/>
+        <updated>2022-08-04T14:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>:::info<br>
+以下介绍可以使用的 markdown 或者 html 标签。</p>
+<p>功能大部分基于 <code>markdown-it</code> 插件与 <code>theme/components</code> 中的组件。<br>
+:::</p>
+<h2>links 链接</h2>
+<p>基于 theme components，用来建立友链或其他网址链接功能。</p>
+<p>使用 <code>HairyLinks</code> 标签、字段包含</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>名称</th>
+<th>必填</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>名称</td>
+<td>是</td>
+</tr>
+<tr>
+<td>url</td>
+<td>地址</td>
+<td>是</td>
+</tr>
+<tr>
+<td>image</td>
+<td>图片</td>
+<td>是</td>
+</tr>
+<tr>
+<td>color</td>
+<td>颜色</td>
+<td>是</td>
+</tr>
+<tr>
+<td>desc</td>
+<td>描述</td>
+<td>否</td>
+</tr>
+</tbody>
+</table>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content>
+        <author>
+            <name>北歌</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2025-08-05T02:03:49.329Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello, Valaxy!]]></title>
+        <id>https://kinseyy.github.io/posts/hello-valaxy</id>
+        <link href="https://kinseyy.github.io/posts/hello-valaxy"/>
+        <updated>2022-03-22T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>Hello, Valaxy!</h2>
+<pre><code class="language-ts">import type { ThemeConfig } from 'valaxy-theme-hairy'
+import { defineConfi</code></pre>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content>
+        <author>
+            <name>北歌</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-03-23T00:00:00.000Z</published>
+    </entry>
+</feed>
